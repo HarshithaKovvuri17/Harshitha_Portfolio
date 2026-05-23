@@ -72,14 +72,17 @@ const Navbar = () => {
           <a 
             href="#home" 
             onClick={(e) => handleClick(e, '#home')} 
-            className="flex items-center gap-2 group font-display font-bold text-xl tracking-tight text-white focus:outline-none"
+            className="flex items-center gap-2 group font-display font-bold text-xl tracking-tight focus:outline-none"
           >
             <div className="relative flex items-center justify-center w-9 h-9 rounded-lg bg-white/5 border border-white/10 overflow-hidden">
               <Cpu className="w-5 h-5 text-accent-cyan group-hover:text-accent-amber transition-colors duration-300" />
               <div className="absolute inset-0 bg-accent-cyan/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
-            <span>
-              K.<span className="text-accent-cyan group-hover:text-accent-amber transition-colors duration-300">Harshitha</span>
+            <span
+              className="text-accent-cyan group-hover:text-accent-amber transition-colors duration-300 tracking-wide font-bold"
+              style={{ textShadow: '0 0 18px rgba(0,240,255,0.55)' }}
+            >
+              K.Harshitha
             </span>
           </a>
 

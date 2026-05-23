@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Layout, Server, Cloud, Cpu } from 'lucide-react';
+import { Code, Layout, Server, Cloud, Cpu, Brain } from 'lucide-react';
 
 const skillCategories = [
   {
@@ -39,12 +39,26 @@ const skillCategories = [
     borderHover: "hover:border-emerald-400/40",
     glowHover: "hover:shadow-[0_0_30px_rgba(52,211,153,0.15)]",
     skills: [
-      { name: "Node.js & Express", level: 85 },
+      { name: "Node.js & Express.js", level: 85 },
       { name: "Django (Python)", level: 85 },
-      { name: "Spring Boot & Springsts", level: 75 },
-      { name: "DevOps & Docker & Jenkins", level: 80 },
-      { name: "Ollama (Local LLMs)", level: 85 },
+      { name: "Spring Boot & Spring MVC", level: 75 },
+      { name: "Docker & Jenkins", level: 80 },
       { name: "Postman (API Testing)", level: 90 },
+    ],
+  },
+  {
+    title: "AI & Machine Learning",
+    icon: Brain,
+    color: "#f472b6",
+    textColor: "text-pink-400",
+    borderHover: "hover:border-pink-400/40",
+    glowHover: "hover:shadow-[0_0_30px_rgba(244,114,182,0.15)]",
+    skills: [
+      { name: "Google Gemini API", level: 90 },
+      { name: "Ollama (Local LLMs)", level: 87 },
+      { name: "Azure OpenAI & Copilot", level: 82 },
+      { name: "Vertex AI (Google Cloud)", level: 78 },
+      { name: "OpenAI API Integration", level: 85 },
     ],
   },
   {
@@ -55,11 +69,11 @@ const skillCategories = [
     borderHover: "hover:border-purple-400/40",
     glowHover: "hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]",
     skills: [
-      { name: "Snowflake (SnowPro Associate)", level: 90 },
+      { name: "Snowflake (SnowPro Associate)", level: 92 },
       { name: "SharePoint & Power Automate", level: 95 },
-      { name: "PowerBI & Data Analytics", level: 85 },
-      { name: "Git, Jupyter & VS Code", level: 90 },
-      { name: "Postman (API Testing)", level: 90 },
+      { name: "PowerBI & Data Analytics", level: 88 },
+      { name: "AWS EC2 & Cloud Deploy", level: 78 },
+      { name: "Git & Version Control", level: 90 },
     ],
   },
 ];
